@@ -5,7 +5,7 @@ import { useState } from "react";
 import { MapPin, Mail, Phone, Send } from "lucide-react";
 import emailjs from "@emailjs/browser";
 
-/* ---------------- INFO CARD COMPONENT ---------------- */
+
 const InfoCard: React.FC<{
   icon: React.ReactNode;
   title: string;
