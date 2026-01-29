@@ -119,9 +119,9 @@ const Contact: React.FC = () => {
             icon={<Mail className="w-6 h-6 cursor-pointer" />}
             title="Email Us"
             subtitle="Support Team"
-            value="Shail.moonlight@gmail.com"
+            value="shail.moonlight@gmail.com"
             action="Send Email"
-            link="mailto:Shail.moonlight@gmail.com"
+            link="mailto:shail.moonlight@gmail.com"
           />
           <InfoCard
             icon={<Phone className="w-6 h-6" />}

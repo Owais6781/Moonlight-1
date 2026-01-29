@@ -92,7 +92,7 @@ const Recruitment: React.FC = () => {
       tag: "Construction Workforce",
       title: "Skilled Professionals Powering Every Build",
       description:
-        "Providing skilled and reliable construction professionals, including engineers, supervisors, technicians, and laborers to meet project demands efficiently and safely.",
+        "Providing skilled and reliable construction professionals, including engineers, supervisors, technicians and laborers to meet project demands efficiently and safely.",
       tagColor: "text-blue-600",
     },
     {
@@ -113,21 +113,21 @@ const Recruitment: React.FC = () => {
       tag: "Technical & Non-Technical Staff",
       title: "Empowering Businesses with Diverse Talent",
       description:
-        "Providing qualified technical and non-technical staff to support operations, administration, and specialized business functions across industries.",
+        "Providing qualified technical and non-technical staff to support operations, administration and specialized business functions across industries.",
       tagColor: "text-blue-600",
     },
     {
       tag: "Oil & Gas Workforce",
       title: "Expert Oil & Gas Workforce You Can Rely On",
       description:
-        "Providing certified and experienced oil and gas professionals for upstream, midstream, and downstream operations with a strong focus on safety and compliance.",
+        "Providing certified and experienced oil and gas professionals for upstream, midstream  and downstream operations with a strong focus on safety and compliance.",
       tagColor: "text-green-500",
     },
     {
       tag: "Skilled & Unskilled Workers",
       title: "Workforce Support for Every Industry",
       description:
-        "Providing skilled and unskilled workers to support construction, manufacturing, logistics, and operational needs across multiple industries.",
+        "Providing skilled and unskilled workers to support construction, manufacturing, logistics  and operational needs across multiple industries.",
       tagColor: "text-orange-500",
     },
   ];

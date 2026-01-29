@@ -160,12 +160,12 @@ const slides = [
     title: "Air Ticketing",
     subtitle: "Air Ticket Services",
     button: "Book Now",
-    route: "/ticket",
+    // route: "/ticket",
 
   },
   {
     image: image5,
-    title: "Document Attestation",
+    title: "Document Legalisation/Attestation",
     subtitle: "Certificate & Embassy Attestation",
     button: "Get Started",
      route: "/attestation"
@@ -255,8 +255,8 @@ const LeftImageSlider: React.FC = () => {
             {slides[index].subtitle}
           </p>
 
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug sm:leading-tight md:leading-tight lg:leading-tight">
-            {slides[index].title}
+          <h1 className="text-2xl  sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug sm:leading-tight md:leading-tight lg:leading-tight">
+            {slides[index].title.split(",")[0]} <br /> {slides[index].title.split(",")[1]}
           </h1>
 
           <button

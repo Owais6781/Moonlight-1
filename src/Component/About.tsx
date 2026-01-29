@@ -127,8 +127,8 @@ const About = () => {
 
               {/* Description */}
               <p className="text-gray-600 leading-relaxed text-base">
-                Redefining travel experiences through innovation, integrity, and
-                personalized care. We create seamless journeys that exceed expectations
+                Redefining travel experiences through innovation, integrity, Competent, Reliable, Ethical & expert customer service
+                and personalized care. We create seamless journeys that exceed expectations
                 while promoting sustainability and cultural sensitivity.
               </p>
             </div>
@@ -239,7 +239,7 @@ const About = () => {
               <div className="space-y-4">
                 {[
                   { title: "Global Network", desc: "Partnerships in 60+ countries" },
-                  { title: "Transparency", desc: "No hidden fees, clear pricing" },
+                  { title: "Transparency", desc: "No hidden cost, clear pricing" },
                   { title: "Expert Team", desc: "20+ years of collective experience" },
                   { title: "Tailored Solutions", desc: "Customized to your preferences" },
                 ].map((value, i) => (

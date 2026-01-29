@@ -128,14 +128,14 @@ const Medical: React.FC = () => {
       tag: "Nursing Services",
       title: "Professional Nursing Services You Can Trust",
       description:
-        "Comprehensive nursing care delivered by trained professionals, ensuring patient comfort, safety, and recovery at every stage.",
+        "Comprehensive nursing care delivered by trained professionals, ensuring patient comfort, safety and recovery at every stage.",
       tagColor: "text-green-600",
     },
     {
       tag: "Emergency & Trauma",
       title: "24/7 Critical & Life-Saving Care",
       description:
-        "The Emergency & Trauma department provides round-the-clock care for accidents, injuries, and critical illnesses.",
+        "The Emergency & Trauma department provides round-the-clock care for accidents, injuries and critical illnesses.",
       tagColor: "text-orange-500",
     },
     {
@@ -149,14 +149,14 @@ const Medical: React.FC = () => {
       tag: "Pediatrics",
       title: "Comprehensive Child Healthcare",
       description:
-        "Dedicated care for infants, children, and adolescents to support healthy growth and development.",
+        "Dedicated care for infants, children and adolescents to support healthy growth and development.",
       tagColor: "text-green-500",
     },
     {
       tag: "Obstetrics & Gynecology",
       title: "Women’s Health & Maternity Care",
       description:
-        "Comprehensive care for pregnancy, childbirth, and women’s reproductive health.",
+        "Comprehensive care for pregnancy, childbirth and women’s reproductive health.",
       tagColor: "text-orange-500",
     },
   ];
@@ -184,7 +184,7 @@ const Medical: React.FC = () => {
           </div>
 
           <p className="text-slate-600 mt-2 text-center">
-            We offer competent and certified candidates for every healthcare department,
+            We offer competent and certified candidates for every healthcare department.
           </p>
         </div>
 

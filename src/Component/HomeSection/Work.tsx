@@ -34,7 +34,7 @@ const steps = [
   {
     id: "03",
     title: "Assessment",
-    desc: "We perform skill-based and personality assessments to evaluate candidate capabilities Skill Evaluation",
+    desc: "We perform skill-based and personality assessments to evaluate candidate capabilities and Skill Evaluation",
     icon: Users,
     color: "text-violet-600",
     bg: "bg-violet-100",
@@ -54,7 +54,7 @@ const steps = [
   {
     id: "05",
     title: "Onboarding",
-    desc: "We issue offer letters and conduct new hire orientation for a smooth onboarding process",
+    desc: "We will have the emigration process, ticketing and will provide orientation to candidate for a smooth onboarding process.",
     icon: Settings,
     color: "text-rose-600",
     bg: "bg-rose-100",
@@ -72,7 +72,8 @@ const HowItWorks = () => {
         
         {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 bg-clip-text text-transparent">
+
+          <h2 className="text-4xl font-extrabold text-center bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 bg-clip-text text-transparent">
             Recruitment Process
           </h2>
           <p className="mt-4 text-slate-500 text-lg">

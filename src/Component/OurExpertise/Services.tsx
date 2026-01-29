@@ -87,35 +87,35 @@ const Services:React.FC = () => {
             tag: "Business Visa",
             title: " Business Travel Solutions",
             description:
-                "Complete Business Visa assistance ensuring smooth documentation, compliance, and timely approvals for international business engagements.",
+                "Complete Business Visa assistance ensuring smooth documentation, compliance and timely approvals for international business engagements.",
             tagColor: "text-blue-600",
         },
         {
             tag: "Tourist Visa",
             title: "Explore the World with Ease",
             description:
-                "Complete Tourist Visa assistance ensuring smooth documentation, compliance, and hassle-free approvals for international travel.",
+                "Complete Tourist Visa assistance ensuring smooth documentation, compliance and hassle-free approvals for international travel.",
             tagColor: "text-green-600",
         },
         {
             tag: "Work Visa",
             title: "Work Abroad with Confidence",
             description:
-                "Complete Work Visa assistance helping professionals navigate eligibility, documentation, and approvals for a successful international career.",
+                "Complete Work Visa assistance helping professionals navigate eligibility, documentation and approvals for a successful international career.",
             tagColor: "text-orange-500",
         },
         {
             tag: "Student Visa",
             title: "Study Abroad Made Simple",
             description:
-                "Complete Student Visa assistance helping students navigate admissions, documentation, and approvals for a successful international education journey.",
+                "Complete Student Visa assistance helping students navigate admissions, documentation and approvals for a successful international education journey.",
             tagColor: "text-blue-600",
         },
         {
             tag: "Transit Visa",
             title: "Seamless Transit Visa Assistance",
             description:
-                "Reliable Transit Visa services to ensure smooth layovers with proper documentation, compliance, and hassle-free approvals.",
+                "Reliable Transit Visa services to ensure smooth layovers with proper documentation, compliance and hassle-free approvals.",
             tagColor: "text-green-500",
         },
         {
@@ -137,8 +137,8 @@ const Services:React.FC = () => {
                 <div className="mb-16">
 
                     <h2 className="text-4xl font-extrabold text-center bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 bg-clip-text text-transparent">
-                      
-                             Visa Services
+
+                        Visa Services
                     </h2>
                     <div className="w-full flex gap-2  justify-end">
                         {fromOurExpertise && (
@@ -151,10 +151,32 @@ const Services:React.FC = () => {
                         )}
                     </div>
 
-                    <p className="text-slate-600 mt-2 text-center">
-                        Reliable visa assistance services to simplify documentation and approval processes for major <br />
-                        Asian countries including UAE, Saudi Arabia, Qatar, Malaysia, Singapore, Thailand and Japan.
-                    </p>
+                    <div className="text-slate-600 mt-2 text-center">
+                        <p>
+                            Reliable visa assistance services to simplify documentation and approval
+                            processes.
+                        </p>
+
+                        <ul className="mt-3 space-y-2 text-left max-w-xl mx-auto list-disc list-inside">
+                            <li>
+                                Procurement of visas on behalf of customers — no need to stand in line <span className="ml-6">we do the waiting for you.</span>
+                            </li>
+                            <li>
+                                Guaranteed accuracy, security, and privacy of your documents.
+                            </li>
+                            <li>
+                                Convenient online tracking of your visa application status.
+                            </li>
+                            <li>
+                                Providing correct and up-to-date visa requirements.
+                            </li>
+                            <li>
+                                Professional, reliable, and expert customer service.
+                            </li>
+
+  </ul>
+</div>
+
                 </div>
 
                 {/* CARDS */}

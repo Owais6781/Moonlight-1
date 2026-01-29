@@ -28,7 +28,7 @@ const TopHeader: React.FC = () => {
                 <Mail className="w-4 h-4 text-cyan-400" />
               </div>
               <span className="hidden sm:inline hover:underline">
-                Shail.moonlight@gmail.com
+                shail.moonlight@gmail.com
               </span>
             </motion.a>
 

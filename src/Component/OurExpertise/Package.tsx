@@ -90,7 +90,7 @@ const Package: React.FC = () => {
             tag: "Goa",
             title: "Love, Luxury & Beaches in Goa",
             description:
-                "Celebrate your love with serene beaches, candlelight dinners, luxury resorts    and unforgettable sunset moments in Goa.", tagColor: "text-green-600",
+                "Celebrate your love with serene beaches, candlelight dinners, luxury resorts  and unforgettable sunset moments in Goa.", tagColor: "text-green-600",
         },
         {
             tag: "Kashmir",
@@ -132,7 +132,7 @@ const Package: React.FC = () => {
                 <div className="mb-16 ">
 
                     <h2 className="text-4xl py-4 font-extrabold text-center bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 bg-clip-text text-transparent">
-                    Holiday Tour Package
+                    Holiday Domestic/International Tour Package
                     </h2>
                     <div className="w-full flex gap-2  justify-end">
                         {fromOurExpertise && (

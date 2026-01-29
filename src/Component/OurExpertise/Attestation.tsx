@@ -13,7 +13,7 @@ import image6 from "../../Media/Attestation/MEA.png";
 
 /* ---------------- IMAGE MAP ---------------- */
 const tagImageMap: Record<string, string> = {
-    "Dubai Embassy": image1,
+    "UAE Embassy": image1,
     "Saudi Embassy": image2,
     "Kuwait Embassy": image4,
     "Qatar Embassy": image3,
@@ -93,24 +93,24 @@ const Attestation: React.FC = () => {
 
     const departments = [
         {
-            tag: "Dubai Embassy",
-            title: "Dubai Embassy Attestation Services",
+            tag: "UAE Embassy",
+            title: "UAE Embassy Attestation Services",
             description:
-                "End-to-end document attestation services for Dubai, ensuring legal compliance.",
+                "End-to-end document attestation services for UAE ensuring legal compliance.",
             tagColor: "text-blue-600",
         },
         {
             tag: "Saudi Embassy",
             title: "Saudi Embassy Attestation",
             description:
-                "Accurate and compliant Saudi embassy documentation support.",
+                "Accurate and compliant Saudi Embassy documentation support.",
             tagColor: "text-green-600",
         },
         {
             tag: "Kuwait Embassy",
             title: "Kuwait Embassy Attestation",
             description:
-                "Professional Kuwait embassy documentation handling.",
+                "Professional Kuwait Embassy documentation handling.",
             tagColor: "text-blue-600",
         },
         {
@@ -125,14 +125,14 @@ const Attestation: React.FC = () => {
             tag: "Bahrain Embassy",
             title: "Bahrain Embassy Attestation",
             description:
-                "Trusted Bahrain embassy document attestation services.",
+                "Trusted Bahrain Embassy document attestation services.",
             tagColor: "text-green-500",
         },
         {
             tag: "MEA and apostille",
             title: "MEA and Apostille Services",
             description:
-                "MEA and apostille attestation for international use.",
+                "Document Attestation by Ministry of External Affairs and Apostle stamping.",
             tagColor: "text-orange-500",
         },
     ];
@@ -145,8 +145,8 @@ const Attestation: React.FC = () => {
 
                 <div className="mb-16">
 
-                    <h2 className="text-4xl font-extrabold text-center bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 bg-clip-text text-transparent">
-                        Document Attestation
+                    <h2 className="text-4xl py-4 font-extrabold text-center bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 bg-clip-text text-transparent">
+                        Document Legalisation/Attestation
                     </h2>
                     <div className="w-full flex gap-2  justify-end">
                         {fromOurExpertise && (

@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
                   <div>
                     <p className="text-white font-medium">Email</p>
                     <p className="text-slate-200 text-xs break-all">
-                      Shail.moonlight@gmail.com
+                      shail.moonlight@gmail.com
                     </p>
                   </div>
                 </li>

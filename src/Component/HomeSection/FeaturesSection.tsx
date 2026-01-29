@@ -10,7 +10,7 @@ const features = [
   {
     icon: Medal,
     title: "Best Price",
-    desc: "Guaranteed lowest prices with no hidden fees",
+    desc: "Guaranteed lowest prices with no hidden cost",
   },
   {
     icon: Users,
