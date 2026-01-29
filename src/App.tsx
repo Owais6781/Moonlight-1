@@ -21,6 +21,9 @@ const Routing = () => {
   return (
     <Routes>
 
+
+      
+
       <Route element={<Layout />}>
         <Route index element={<Home view="home" />} />
         <Route element={<Home view="LeftImageSlider" />} />
