@@ -1,5 +1,5 @@
 export default {
   fetch(request: Request) {
-    return new Response("Hello from Moonlight Worker 🚀");
+    return new Response(`URL: ${request.url}`);
   },
 };
