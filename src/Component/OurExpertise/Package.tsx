@@ -6,7 +6,7 @@ import image1 from "../../Media/Package/Rajasthan.jpg"
 import image2 from "../../Media/Package/Goa.jpg"
 import image3 from "../../Media/Package/Russia.jpg"
 import image4 from "../../Media/Package/Malaysia.png"
-import image5 from "../../Media/Package/Japan.jpg"
+import image5 from "../../Media/Package/japan.png"
 import image6 from "../../Media/Package/Kashmir.jpg"
 const tagImageMap: Record<string, string> = {
     "Rajasthan": image1,

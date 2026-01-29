@@ -1,97 +1,3 @@
-// import {
-//   UserSearch,
-//   ClipboardCheck,
-//   Users,
-//   BadgeCheck, Settings 
-// } from "lucide-react";
-
-// const steps = [
-//   {
-//     id: "01",
-//     title: "Recruitment",
-//     desc: "We conduct initial screening, resume review, and phone interviews to identify the best candidates",
-//     icon: UserSearch,
-//   },
-//   {
-//     id: "02",
-//     title: "Interviews",
-//     desc: "We conduct first-round and behavioral interviews to assess candidate suitability",
-//     icon: ClipboardCheck,
-//   },
-//   {
-//     id: "03",
-//     title: "Skill assessment",
-//     desc: "We perform skill-based and personality assessments to evaluate candidate capabilities",
-//     icon: Users,
-//   },
-//     {
-//     id: "04",
-//     title: "Background verification",
-//     desc: "We conduct reference and background checks to ensure candidate reliability",
-//     icon: BadgeCheck,
-//   },
-//     {
-//     id: "05",
-//     title: "Offer and onboarding",
-//     desc: "We issue offer letters and conduct new hire orientation for a smooth onboarding process",
-//     icon: Settings,
-//   },
-// ];
-
-// const HowItWorks = () => {
-//   return (
-//     <section className="py-20 bg-white">
-//       <div className="max-w-7xl mx-auto px-4">
-        
-//         {/* Heading */}
-//         <h2 className="text-4xl font-bold text-center mb-16">
-//           How we work for recruitment
-//         </h2>
-
-//         {/* Steps */}
-//         <div className="grid grid-cols-1 md:grid-cols-3 gap-14">
-//           {steps.map((step, index) => {
-//             const Icon = step.icon;
-
-//             return (
-//               <div key={index} className="text-center relative">
-                
-//                 {/* Circle + Icon */}
-//                 <div className="relative mx-auto w-36 h-36 flex items-center justify-center">
-                  
-//                   {/* Red hand-drawn circle */}
-//                   <div className="absolute inset-0 border-4 border-red-500 rounded-full rotate-[8deg]"></div>
-//                   <div className="absolute inset-2 border-4 border-red-500 rounded-full -rotate-[6deg]"></div>
-
-//                   {/* Step number */}
-//                   <span className="absolute -top-2 -right-2 w-10 h-10 bg-black text-white rounded-full flex items-center justify-center text-sm font-bold">
-//                     {step.id}
-//                   </span>
-
-//                   {/* Icon */}
-//                   <Icon className="w-10 h-10 text-gray-800 z-10" />
-//                 </div>
-
-//                 {/* Title */}
-//                 <h3 className="mt-6 text-xl font-semibold">
-//                   {step.title}
-//                 </h3>
-
-//                 {/* Description */}
-//                 <p className="mt-3 text-gray-600 text-sm leading-relaxed max-w-xs mx-auto">
-//                   {step.desc}
-//                 </p>
-//               </div>
-//             );
-//           })}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default HowItWorks;
-
 
 
 
@@ -108,7 +14,7 @@ const steps = [
   {
     id: "01",
     title: "Recruitment",
-    desc: "We conduct initial screening, resume review, and phone interviews to identify the best candidates",
+    desc: "We conduct initial screening, resume review and phone interviews to identify the best candidates",
     icon: UserSearch,
     color: "text-blue-600",
     bg: "bg-blue-100",
