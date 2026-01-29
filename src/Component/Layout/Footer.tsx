@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
   const footerLinks = [
 
     { label: "Home", path: "/" },
-    { label: "Our Expertise", path: "/Expertise" },
+    { label: "Our Expertise", path: "/expertise" },
     { label: "About Us", path: "/about" },
     { label: "Contact", path: "/contact" },
   ];

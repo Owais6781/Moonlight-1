@@ -10,15 +10,16 @@ const Layout = () => {
   const location = useLocation();
 
   const hideSliderRoutes = [
-    "/about",
-    "/contact",
-    "/Expertise",
+   
+    "/expertise",
     "/medical",
-    "/Services",
-    "/Package",
-    "/Attestation",
-    "/Recruitment",
-    "/Ticket",
+    "/services",
+    "/package",
+    "/attestation",
+    "/recruitment",
+    "/ticket",
+     "/about",
+    "/contact",
   ];
   const shouldShowSlider = !hideSliderRoutes.includes(location.pathname);
 

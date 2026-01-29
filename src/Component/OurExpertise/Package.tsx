@@ -125,13 +125,13 @@ const Package: React.FC = () => {
     return (
 
 
-      <section className="bg-gradient-to-br from-slate-50 to-slate-100 py-4 ">
-            <div className="max-w-7xl mx-auto px-6">
+      <section className="bg-gradient-to-br from-slate-50 to-slate-100 py-4  ">
+            <div className="max-w-7xl mx-auto px-6 ">
 
 
-                <div className="mb-16">
+                <div className="mb-16 ">
 
-                    <h2 className="text-4xl font-extrabold text-center bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 bg-clip-text text-transparent">
+                    <h2 className="text-4xl py-4 font-extrabold text-center bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 bg-clip-text text-transparent">
                     Holiday Tour Package
                     </h2>
                     <div className="w-full flex gap-2  justify-end">

@@ -1,20 +1,20 @@
 
-import HomeDefault from "../HomeSection/HomeDefault"
-import Expertise from "../OurExpertise/Expertise"
+// import HomeDefault from "../HomeSection/HomeDefault"
+// import Expertise from "../OurExpertise/Expertise"
 
-const MiddleSection = ({ view }: { view: string }) => {
-      switch (view) {
+// const MiddleSection = ({ view }: { view: string }) => {
+//       switch (view) {
 
-            case "Expertise":
-                  return <Expertise />
+//             case "Expertise":
+//                   return <Expertise />
 
-            default:
-                  return <HomeDefault/>
-
-
-      }
+//             default:
+//                   return <HomeDefault/>
 
 
-      return (<></>)
-}
-export default MiddleSection
+//       }
+
+
+//       return (<></>)
+// }
+// export default MiddleSection

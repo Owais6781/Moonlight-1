@@ -1,22 +1,22 @@
 
 
 
-import MiddleSection from "./MiddleSection";
+// import MiddleSection from "./MiddleSection";
 
 
-interface HomeView {
-    view?: string
-}
+// interface HomeView {
+//     view?: string
+// }
 
-const Home = ({ view = " default" }: HomeView) => {
-    return (
-        <div>
+// const Home = ({ view = " default" }: HomeView) => {
+//     return (
+//         <div>
 
-            <div>
-                <MiddleSection  view={view ||"default"} />
-            </div>
-        </div>
-    );
-};
+//             <div>
+//                 <MiddleSection  view={view ||"default"} />
+//             </div>
+//         </div>
+//     );
+// };
 
-export default Home;
+// export default Home;

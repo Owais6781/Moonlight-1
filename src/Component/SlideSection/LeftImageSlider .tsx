@@ -127,7 +127,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import image1 from "../../Media/HomeSlide/Visa.png" 
 import image2 from "../../Media/HomeSlide/tour-packages-banner.jpg" 
-import image3 from "../../Media/HomeSlide/tawaf_history2-1024x576.jpg" 
+import image3 from "../../Media/HomeSlide/Tawaf.png" 
 import image4 from "../../Media/Ticket/Air-India.jpg"
 import image5 from "../../Media/HomeSlide/Embassy-Attestation-1024x1024.png"
 import image6 from "../../Media/HomeSlide/travel-insurance.jpg"
@@ -139,14 +139,14 @@ const slides = [
     title: "Visa & Emmigration Made Easy",
     subtitle: "Visa Services",
     button: "Apply Today",
-     route: "/Services"
+     route: "/services"
   },
   {
     image: image2,
     title: "Dream Holidays, Best Prices",
     subtitle: "Holiday Packages",
     button: "View Packages",
-    route: "/Package",
+    route: "/package",
   },
   {
     image: image3,
@@ -160,7 +160,7 @@ const slides = [
     title: "Air Ticketing",
     subtitle: "Air Ticket Services",
     button: "Book Now",
-    route: "/Ticket",
+    route: "/ticket",
 
   },
   {
@@ -168,7 +168,7 @@ const slides = [
     title: "Document Attestation",
     subtitle: "Certificate & Embassy Attestation",
     button: "Get Started",
-     route: "/Attestation"
+     route: "/attestation"
   },
   {
     image:  image6,
