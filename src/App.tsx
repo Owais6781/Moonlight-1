@@ -12,7 +12,7 @@ import Ticket from './Component/OurExpertise/Ticket'
 import Attestation from "./Component/OurExpertise/Attestation";
 import Recruitment from "./Component/OurExpertise/Recruitment";
 import Services from "./Component/OurExpertise/Services";
-// import ScrollToTop from "./Component/ScrollToTop";
+ import ScrollToTop from "./Component/ScrollToTop";
 
 
 
@@ -48,9 +48,6 @@ const Routing = () => {
        
 
 
-
-
-
       </Route>
     </Routes>
   );
@@ -58,7 +55,7 @@ const Routing = () => {
 
 const App = () => (
   <BrowserRouter>
-    {/* <ScrollToTop /> */}
+    <ScrollToTop />
     <Routing />
   </BrowserRouter>
 );
