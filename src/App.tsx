@@ -69,7 +69,7 @@
 
 
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Component/Layout/Layout";
 import ScrollToTop from "./Component/ScrollToTop";
 import HomeDefault from "./Component/HomeSection/HomeDefault";
@@ -114,10 +114,10 @@ const Routing = () => {
 };
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter>
     <ScrollToTop />
     <Routing />
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
