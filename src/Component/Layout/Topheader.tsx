@@ -41,7 +41,9 @@ const TopHeader: React.FC = () => {
               <div className="w-8 h-8 rounded-lg bg-green-500/20 flex items-center justify-center">
                 <Phone className="w-4 h-4 text-green-400" />
               </div>
-              <span className="hidden sm:inline">+91 8587860420</span>
+              <span className="hidden sm:inline">
+                +91 8587860420
+                </span>
             </motion.a>
           </div>
 

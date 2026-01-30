@@ -152,14 +152,16 @@ const Services:React.FC = () => {
                     </div>
 
                     <div className="text-slate-600 mt-2 text-center">
-                        <p>
+                        {/* <p>
                             Reliable visa assistance services to simplify documentation and approval
                             processes.
-                        </p>
+                        </p> */}
 
-                        <ul className="mt-3 space-y-2 text-left max-w-xl mx-auto list-disc list-inside">
+                        <ul className="mt-3 space-y-2 text-left max-w-xl mx-auto list-disc ">
+                            <li> Reliable visa assistance services to simplify documentation and approval
+                            processes.</li>
                             <li>
-                                Procurement of visas on behalf of customers — no need to stand in line <span className="ml-6">we do the waiting for you.</span>
+                                Procurement of visas on behalf of customers — no need to stand in line we do the waiting for you.
                             </li>
                             <li>
                                 Guaranteed accuracy, security, and privacy of your documents.

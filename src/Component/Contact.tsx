@@ -84,6 +84,17 @@ const Contact: React.FC = () => {
       );
   };
 
+
+  const subjectOption = [
+    "Healthcare  Recruitment",
+    "Visa Consultation",
+    "Air Ticket Booking",
+    "Travel Consultation",
+    "Hajj & Umarah",
+    "Holiday Tour Packages",
+    "Document Legalisation/Attestation",
+    "Other",
+  ]
   return (
     <div className="relative min-h-screen bg-slate-50 text-slate-900 overflow-x-hidden">
       {/* Background Effects */}
@@ -155,7 +166,24 @@ const Contact: React.FC = () => {
               <input className="w-full border rounded-md p-2" placeholder="Your Name" required />
               <input className="w-full border rounded-md p-2" placeholder="Your Email" required />
               <input className="w-full border rounded-md p-2" placeholder="Your Phone" />
-              <input className="w-full border rounded-md p-2" placeholder="Subject" required />
+              {/* <input className="w-full border rounded-md p-2" placeholder="Subject" required /> */}
+
+              {/* SUBJECT DROPDOWN */}
+              <select
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+                required
+                className="w-full border rounded-md p-2 bg-white"
+              >
+                <option value="" disabled>
+                  Select Subject
+                </option>
+                {subjectOption.map((item, index) => (
+                  <option key={index} value={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
               <textarea rows={5} className="w-full border rounded-md p-2" placeholder="Your Message" required />
 
               <button
