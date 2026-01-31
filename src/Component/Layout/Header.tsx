@@ -125,7 +125,7 @@ const Header = () => {
     { name: "Manpower Recruitment", path: "/recruitment" },
     { name: " Visa Services", path: "/services" },
     { name: "Holiday Tour Package", path: "/package" },
-    { name: "Air Ticket", path: "" },
+    { name: "Air Ticket", path: "#" },
     { name: "Document Attestation", path: "/attestation" },
   ];
 
@@ -180,7 +180,7 @@ const Header = () => {
                     `block px-4 py-3 text-sm transition ${
                       isActive
                         ? "text-blue-600 font-semibold"
-                        : "text-slate-700 hover:bg-slate-50"
+                        : "text-slate-700 hover:bg-slate-50 hover:rounded-t-xl"
                     }`
                   }
                 >
