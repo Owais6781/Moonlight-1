@@ -20,7 +20,7 @@ const TopHeader: React.FC = () => {
           <div className="flex items-center gap-6">
             {/* Email */}
             <motion.a
-              href="mailto:Shail.moonlight@gmail.com"
+              href="mailto:info@moonlightoverseas.in"
               className="flex items-center gap-2 text-sm text-white/80 hover:text-cyan-400 transition"
               whileHover={{ x: 2 }}
             >
@@ -28,7 +28,7 @@ const TopHeader: React.FC = () => {
                 <Mail className="w-4 h-4 text-cyan-400" />
               </div>
               <span className="hidden sm:inline hover:underline">
-                shail.moonlight@gmail.com
+                info@moonlightoverseas.in
               </span>
             </motion.a>
 

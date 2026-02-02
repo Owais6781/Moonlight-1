@@ -132,7 +132,8 @@ const Attestation: React.FC = () => {
             tag: "MEA and apostille",
             title: "MEA and Apostille Services",
             description:
-                "Document Attestation by Ministry of External Affairs and Apostle stamping.",
+                 "Document Attestation by Ministry of External Affairs and Apostle stamping.",
+               // " All original documents/copies requiring attestation or Apostille should be first authenticated by the designated authorities of the State/Union Territory from where the document has been issued.                          State Home Department Authentication: In case of personal documents like Birth Certificates/Marriage Certificates etc, Home/General Administration Department of the concerned State Government/Union Territory are the designated authorities.                                                       State HRD Authentication :In case of educational documents, the documents should first be authenticated by the Education Department of the concerned State Government/Union Territory.  ",
             tagColor: "text-orange-500",
         },
     ];
@@ -205,7 +206,7 @@ const Attestation: React.FC = () => {
                             {selectedDept.title}
                         </h3>
 
-                        <p className="text-slate-600 mt-4 leading-relaxed">
+                        <p className="text-slate-600 mt-4 leading-relaxed whitespace-pre-wrap  overflow-auto max-h-40">
                             {selectedDept.description}
                         </p>
 
