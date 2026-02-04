@@ -16,7 +16,7 @@ const Header = () => {
     { name: "Manpower Recruitment", path: "/recruitment" },
     { name: " Visa Services", path: "/services" },
     { name: "Holiday Tour Package", path: "/package" },
-    { name: "Air Ticket", path: "#" },
+    // { name: "Air Ticket", path: "#" },
     { name: "Document Attestation", path: "/attestation" },
   ];
 
@@ -66,7 +66,7 @@ const Header = () => {
               Our Expertise <ChevronDown size={16} />
             </button>
 
-            <div className="absolute left-0 top-full mt-3 w-56 bg-white border rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+            <div className="absolute left-0  top-full mt-3 w-46 bg-white border rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
               {expertiseItems.map((item) => (
                 <NavLink
                   key={item.name}
@@ -75,7 +75,7 @@ const Header = () => {
                     `block px-4 py-3 text-sm transition ${
                       isActive
                         ? "text-blue-600 font-semibold"
-                        : "text-slate-700 hover:bg-slate-50 hover:rounded-t-xl"
+                        : "text-slate-700 hover:bg-slate-100 hover:rounded-t-xl hover:rounded-b-xl my-2 "
                     }`
                   }
                 >
