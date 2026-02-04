@@ -66,7 +66,7 @@ const steps = [
 const HowItWorks = () => {
   return (
     
-    <section className="relative   my-8  bg-gradient-to-br from-slate-50 to-slate-100 overflow-hidden">
+    <section className="relative   mt-4 py-8  bg-gradient-to-br from-slate-50 to-slate-100 overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-4 ">
         

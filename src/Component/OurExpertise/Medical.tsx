@@ -246,10 +246,11 @@ const Medical: React.FC = () => {
         </div>
       )}
 
-      {fromOurExpertise && (
-
+      {/* {fromOurExpertise && (
         <HowItWorks />
-      )}
+      )} */}
+       <HowItWorks />
+
     </section>
   );
 };

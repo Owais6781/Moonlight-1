@@ -217,11 +217,10 @@ const Recruitment: React.FC = () => {
             </div>
           </div>
         )}
-        {fromOurExpertise && (
-        
-    <HowItWorks />
-
-        )}
+        {/* {fromOurExpertise && (
+          <HowItWorks />
+        )} */}
+         <HowItWorks />
       </section>
     </div>
   );
