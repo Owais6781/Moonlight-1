@@ -6,7 +6,7 @@ import image1 from "../../Media/Services/Business Visa.jpg"
 import image2 from "../../Media/Services/Tourist Visa.png"
 import image3 from "../../Media/Services/Work Visa.png"
 import image4 from "../../Media/Services/Student Visa.png"
-import image5 from "../../Media/Services/Transit Visa.png"
+import image5 from "../../Media/Services/Seaman Visa.jpg"
 import image6 from "../../Media/Services/Medical  Visa.jpg"
 
 
@@ -15,7 +15,7 @@ const tagImageMap: Record<string, string> = {
     "Tourist Visa":image2,
     "Work Visa":image3 ,
     "Student Visa":image4,
-    "Transit Visa":image5,
+    "Seaman Visa":image5,
     "Medical  Visa":image6 ,
 
 };
@@ -112,17 +112,15 @@ const Services:React.FC = () => {
             tagColor: "text-blue-600",
         },
         {
-            tag: "Transit Visa",
-            title: "Seamless Transit Visa Assistance",
-            description:
-                "Reliable Transit Visa services to ensure smooth layovers with proper documentation, compliance and hassle-free approvals.",
+            tag: "Seaman Visa",
+            title: " Seaman Visa is issued to crew members working on ships",
+            description:"A Seaman Visa is issued to crew members working on ships, allowing them to enter  a country to join, serve on, or depart from a vessel.",
             tagColor: "text-green-500",
         },
         {
             tag: "Medical  Visa",
             title: "Bringing Families Together for Care & Healing",
-            description:
-                "Our medical visa services help patients and their loved ones travel safely and smoothly for timely treatment and compassionate care abroad.",
+            description:"Our medical visa services help patients and their loved ones travel safely and smoothly for timely treatment, compassionate care abroad, and comfortable hotel stay arrangements.",
             tagColor: "text-orange-500",
         },
     ];

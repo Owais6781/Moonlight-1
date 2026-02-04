@@ -15,7 +15,7 @@ const features = [
   {
     icon: Users,
     title: "Expert Team",
-    desc: "Experienced consultants at every step",
+    desc: "Experienced Consultants at every step",
   },
   {
     icon: Headphones,

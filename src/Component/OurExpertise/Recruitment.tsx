@@ -84,6 +84,7 @@ const Recruitment: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const fromOurExpertise = location.state?.fromOurExpertise || false;
+  
 
   const [selectedDept, setSelectedDept] = useState<any>(null);
 
@@ -131,11 +132,12 @@ const Recruitment: React.FC = () => {
       tagColor: "text-orange-500",
     },
   ];
+  
 
   return (
    
     <div >
-      <section className="bg-gradient-to-br from-slate-50 to-slate-100 pt-4  " >
+      <section className="bg-gradient-to-br from-slate-50 to-slate-100 pt-4 py-6  " >
         <div className="max-w-7xl mx-auto px-6">
 
 
@@ -217,10 +219,10 @@ const Recruitment: React.FC = () => {
             </div>
           </div>
         )}
-        {/* {fromOurExpertise && (
+        {fromOurExpertise && (
           <HowItWorks />
-        )} */}
-         <HowItWorks />
+        )}
+         {/* <HowItWorks /> */}
       </section>
     </div>
   );

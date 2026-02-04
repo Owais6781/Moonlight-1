@@ -48,6 +48,7 @@ const Footer: React.FC = () => {
                 <li key={item.path}>
                   <Link
                     to={item.path}
+                      onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}
                     className="  gap-2  text-slate-200 hover:text-blue-400 transition-colors group"
                   >
                     <FaArrowRight
@@ -122,7 +123,7 @@ const Footer: React.FC = () => {
                 <div>
                   <p className="text-white font-medium">Registered Office</p>
                   <p className="text-slate-200 text-xs leading-relaxed">
-                    H-45/B, Abul Fazal Enclave-1 Jamia Nagar, New Delhi 110025
+                    H-45/B, Abul Fazal Enclave-1 , Jamia Nagar, New Delhi 110025
                   </p>
                 </div>
               </li>

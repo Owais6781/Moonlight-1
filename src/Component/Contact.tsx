@@ -105,7 +105,7 @@ const Contact: React.FC = () => {
       {/* Header */}
       <div className="relative pt-4 pb-16 px-4 text-center">
         <h1 className="text-5xl md:text-6xl font-extrabold mb-6">
-          We’d love to{" "}
+          We would love to{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
             hear from you
           </span>

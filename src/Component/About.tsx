@@ -127,7 +127,7 @@ const About = () => {
 
               {/* Description */}
               <p className="text-gray-600 leading-relaxed text-base">
-                Redefining travel experiences through innovation, integrity, Competent, Reliable, Ethical & expert customer service
+                Redefining travel experiences through Innovation, Integrity, Competent, Reliable, Ethical & expert customer service
                 and personalized care. We create seamless journeys that exceed expectations
                 while promoting sustainability and cultural sensitivity.
               </p>

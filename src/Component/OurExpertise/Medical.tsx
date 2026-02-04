@@ -1,7 +1,7 @@
 
-
+import * as React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import React from "react";
+
 import HowItWorks from "../HomeSection/Work";
 import image1 from "../../Media/Medical/General Medicine.png"
 import image2 from "../../Media/Medical/Nursing.png"
@@ -115,6 +115,7 @@ const Medical: React.FC = () => {
   const location = useLocation();
   const fromOurExpertise = location.state?.fromOurExpertise || false;
   const [selectedDept, setSelectedDept] = React.useState<Department | null>( null);
+  
 
   const departments = [
     {
@@ -163,7 +164,7 @@ const Medical: React.FC = () => {
 
   return (
     
-    <section className="bg-gradient-to-br from-slate-50 to-slate-100 py-4">
+    <section className="bg-gradient-to-br from-slate-50 to-slate-100 py-6">
       <div className="max-w-7xl mx-auto px-6">
 
 
@@ -246,10 +247,10 @@ const Medical: React.FC = () => {
         </div>
       )}
 
-      {/* {fromOurExpertise && (
+      {fromOurExpertise && (
         <HowItWorks />
-      )} */}
-       <HowItWorks />
+      )}
+       {/* <HowItWorks /> */}
 
     </section>
   );

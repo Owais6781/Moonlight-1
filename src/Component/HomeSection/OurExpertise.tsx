@@ -211,7 +211,7 @@ const services = [
     title: "Manpower Recruitment",
     icon: Users,
     desc: "Skilled, semi-skilled & white-collar manpower for diverse industries globally.",
-    route: "/Recruitment",
+    route: "/recruitment",
     colorTheme: {
       iconBg: "from-orange-500 to-amber-600",
       lineColor: "bg-orange-500",
@@ -222,8 +222,8 @@ const services = [
   {
     title: "Visa Services",
     icon: Globe,
-    desc: "End-to-end support for tourist, business, work & study visas.",
-    route: "/Services",
+    desc: "End-to-end support for tourist, business, work permit & study visas.",
+    route: "/services",
     colorTheme: {
       iconBg: "from-emerald-500 to-green-600",
       lineColor: "bg-emerald-500",
@@ -235,7 +235,7 @@ const services = [
     title: "Holiday Tour Package",
     icon: Luggage,
     desc: "Curated vacations — beaches, mountains, culture & adventure.",
-    route: "/Package",
+    route: "/package",
     colorTheme: {
       iconBg: "from-pink-500 to-rose-600",
       lineColor: "bg-pink-500",
@@ -247,6 +247,7 @@ const services = [
     title: "Air Ticket",
     icon: Plane,
     desc: "Fast & affordable flight bookings for any destination.",
+    //  route: "/ticket",
     colorTheme: {
       iconBg: "from-sky-500 to-indigo-600",
       lineColor: "bg-sky-500",
@@ -257,8 +258,8 @@ const services = [
   {
     title: "Document Attestation",
     icon: Stamp,
-    desc: "Embassy & government-compliant attestation services.",
-    route: "/Attestation",
+    desc: "Embassy & government-compliance. attestation services.",
+    route: "/attestation",
     colorTheme: {
       iconBg: "from-violet-500 to-purple-600",
       lineColor: "bg-violet-500",
