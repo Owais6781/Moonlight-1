@@ -247,7 +247,7 @@ const services = [
     title: "Air Ticket",
     icon: Plane,
     desc: "Fast & affordable flight bookings for any destination.",
-    //  route: "/ticket",
+      route: "/ticket",
     colorTheme: {
       iconBg: "from-sky-500 to-indigo-600",
       lineColor: "bg-sky-500",

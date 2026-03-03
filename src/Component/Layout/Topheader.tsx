@@ -50,7 +50,7 @@ const TopHeader: React.FC = () => {
           {/* RIGHT SIDE – Social Icons */}
           <div className="flex items-center gap-3">
             <motion.a
-              href="https://instagram.com"
+              href="https://www.instagram.com/moonlightoverseas.in?igsh=bXk3MG9ma3A1b2tr&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ y: -2 }}
@@ -70,7 +70,7 @@ const TopHeader: React.FC = () => {
             </motion.a>
 
             <motion.a
-              href="https://facebook.com"
+              href="https://www.facebook.com/share/14UFhWDxWxZ/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ y: -2 }}

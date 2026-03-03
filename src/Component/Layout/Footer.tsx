@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
                 Moonlight <span className="text-slate-500">Overseas</span>
               </h2>
               <span className="text-xs font-semibold tracking-widest text-slate-200 uppercase">
-                Tour & Travel Company
+                Your Trusted Travel Partner
               </span>
             </div>
             <p className="text-slate-200 text-sm leading-relaxed pr-4">

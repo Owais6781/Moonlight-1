@@ -14,10 +14,10 @@ const Header = () => {
   const expertiseItems = [
     { name: "Healthcare Recruitment", path: "/medical" },
     { name: "Manpower Recruitment", path: "/recruitment" },
-    { name: " Visa Services", path: "/services" },
     { name: "Holiday Tour Package", path: "/package" },
-    // { name: "Air Ticket", path: "#" },
     { name: "Document Attestation", path: "/attestation" },
+    { name: " Visa Services", path: "/services" },
+    { name: "Air Ticket", path: "/ticket" },
   ];
 
   return (
