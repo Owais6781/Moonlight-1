@@ -13,9 +13,6 @@ const Header = () => {
 
 
 
-
-
-  
   const expertiseItems = [
     { name: "Healthcare Recruitment", path: "/medical" },
     { name: "Manpower Recruitment", path: "/recruitment" },
