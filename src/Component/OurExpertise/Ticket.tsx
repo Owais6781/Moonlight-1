@@ -23,62 +23,62 @@ const tagImageMap: Record<string, string> = {
 };
 
 // Card Props
-type CardProps = {
-  tag: string;
-  title: string;
-  description: string;
-  tagColor?: string;
-  onReadMore: () => void;
+// type CardProps = {
+//   tag: string;
+//   title: string;
+//   description: string;
+//   tagColor?: string;
+//   onReadMore: () => void;
 
-};
+// };
 
-const Card: React.FC<CardProps> = ({ tag, title, description, onReadMore, tagColor = "text-blue-600" }) => {
-  const imageUrl = tagImageMap[tag] || "/images/default.jpg";
+// const Card: React.FC<CardProps> = ({ tag, title, description, onReadMore, tagColor = "text-blue-600" }) => {
+//   const imageUrl = tagImageMap[tag] || "/images/default.jpg";
 
 
-  return (
+//   return (
 
-    <div
-      className="group bg-white rounded-2xl overflow-hidden
-      border-2 border-slate-100 shadow-sm
-       hover:shadow-2xl hover:-translate-y-2
-      transition-all duration-300  cursor-pointer"
-      onClick={onReadMore}
-    >
-      {/* Image */}
-      <div
-        className="h-52 bg-cover bg-center relative"
-        style={{ backgroundImage: `url(${imageUrl})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-      </div>
+//     <div
+//       className="group bg-white rounded-2xl overflow-hidden
+//       border-2 border-slate-100 shadow-sm
+//        hover:shadow-2xl hover:-translate-y-2
+//       transition-all duration-300  cursor-pointer"
+//       onClick={onReadMore}
+//     >
+//       {/* Image */}
+//       <div
+//         className="h-52 bg-cover bg-center relative"
+//         style={{ backgroundImage: `url(${imageUrl})` }}
+//       >
+//         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+//       </div>
 
-      {/* Content */}
-      <div className="p-6 space-y-4 ">
-        <span className={`text-xs font-semibold uppercase ${tagColor}`}>
-          {tag}
-        </span>
+//       {/* Content */}
+//       <div className="p-6 space-y-4 ">
+//         <span className={`text-xs font-semibold uppercase ${tagColor}`}>
+//           {tag}
+//         </span>
 
-        <h3 className="text-xl font-bold text-slate-900 leading-snug">
-          {title}
-        </h3>
+//         <h3 className="text-xl font-bold text-slate-900 leading-snug">
+//           {title}
+//         </h3>
 
-        <p className="text-slate-600 text-sm line-clamp-2">
-          {description}
-        </p>
+//         <p className="text-slate-600 text-sm line-clamp-2">
+//           {description}
+//         </p>
 
-        <button
-          onClick={onReadMore}
-          className="inline-flex items-center gap-2
-          text-blue-600 font-medium text-sm
-          group-hover:gap-3 transition-all cursor-pointer"
-        >
-          Read More <span className="text-lg">→</span>
-        </button>
-      </div>
-    </div>
-  );
-};
+//         <button
+//           onClick={onReadMore}
+//           className="inline-flex items-center gap-2
+//           text-blue-600 font-medium text-sm
+//           group-hover:gap-3 transition-all cursor-pointer"
+//         >
+//           Read More <span className="text-lg">→</span>
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
 
 const Ticket: React.FC = () => {
   const navigate = useNavigate();
