@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
                   <Link
                     to={item.path}
                       onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}
-                    className="  gap-2  text-slate-200 hover:text-blue-400 transition-colors group"
+                    className="flex items-center  gap-2  text-slate-200 hover:text-blue-400 transition-colors group"
                   >
                     <FaArrowRight
                       className="text-[10px] opacity-0 -translate-x-2 transition-all duration-300
