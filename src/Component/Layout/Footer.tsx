@@ -42,14 +42,14 @@ const Footer: React.FC = () => {
 
           {/* Column 2: Company Links */}
           <div className=" ">
-            <h3 className="text-white font-bold text-lg mb-6">Link</h3>
+            <h3 className=" flex items-center  justify-center   text-white font-bold text-lg mb-6">Link</h3>
             <ul className="space-y-4 text-sm">
               {footerLinks.map((item) => (
                 <li key={item.path}>
                   <Link
                     to={item.path}
                       onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}
-                    className="flex items-center  gap-2  text-slate-200 hover:text-blue-400 transition-colors group"
+                    className="flex items-center  justify-center gap-0.5   text-slate-200 hover:text-blue-400 transition-colors group"
                   >
                     <FaArrowRight
                       className="text-[10px] opacity-0 -translate-x-2 transition-all duration-300
