@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import HowItWorks from "../HomeSection/Work";
-
+import { ArrowLeft } from "lucide-react";
 
 // Import images
 import image1 from "../../Media/Recruitment/Construction-Workforce.jpg";
@@ -146,7 +146,10 @@ const Recruitment: React.FC = () => {
             <h2 className="text-4xl  font-extrabold text-center bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 bg-clip-text text-transparent">
               Manpower Recruitment
             </h2>
-            <div className="w-full flex gap-2  justify-end">
+            <p className="text-slate-600 mt-2 text-center">
+              Explore our comprehensive manpower recruitment solutions,  connecting skilled professionals with businesses across multiple industries.
+            </p>
+            {/* <div className="w-full flex gap-2  justify-end">
               {fromOurExpertise && (
                 <button
                   onClick={() => navigate(-1)}
@@ -155,11 +158,25 @@ const Recruitment: React.FC = () => {
                   Back
                 </button>
               )}
-            </div>
+            </div> */}
 
-            <p className="text-slate-600 mt-2 text-center">
-              Explore our comprehensive manpower recruitment solutions,  connecting skilled professionals with businesses across multiple industries.
-            </p>
+            
+              <div className="w-full flex justify-start">
+            {fromOurExpertise && (
+              <button
+                onClick={() => navigate(-1)}
+                className="group flex items-center gap-2 px-6 py-2 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg"
+              >
+             
+                <ArrowLeft
+                  className="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1"
+                />
+
+               
+                <span className="font-medium">Back</span>
+              </button>
+            )}
+          </div>
           </div>
 
           {/* CARDS */}

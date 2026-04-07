@@ -1,7 +1,7 @@
 
 import * as React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-
+import { ArrowLeft } from "lucide-react";
 import HowItWorks from "../HomeSection/Work";
 import image1 from "../../Media/Medical/General Medicine.png"
 import image2 from "../../Media/Medical/Nursing.png"
@@ -114,8 +114,8 @@ const Medical: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const fromOurExpertise = location.state?.fromOurExpertise || false;
-  const [selectedDept, setSelectedDept] = React.useState<Department | null>( null);
-  
+  const [selectedDept, setSelectedDept] = React.useState<Department | null>(null);
+
 
   const departments = [
     {
@@ -163,7 +163,7 @@ const Medical: React.FC = () => {
   ];
 
   return (
-    
+
     <section className="bg-gradient-to-br from-slate-50 to-slate-100 py-6">
       <div className="max-w-7xl mx-auto px-6">
 
@@ -173,7 +173,10 @@ const Medical: React.FC = () => {
           <h2 className="text-4xl font-extrabold text-center bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 bg-clip-text text-transparent">
             Medical Departments
           </h2>
-          <div className="w-full flex gap-2  justify-end">
+            <p className="text-slate-600 mt-2 text-center">
+            We offer competent and certified candidates for every healthcare department.
+          </p>
+          {/* <div className="w-full flex gap-2  justify-end">
             {fromOurExpertise && (
               <button
                 onClick={() => navigate(-1)}
@@ -182,11 +185,25 @@ const Medical: React.FC = () => {
                 Back
               </button>
             )}
+          </div> */}
+          <div className="w-full flex justify-start">
+            {fromOurExpertise && (
+              <button
+                onClick={() => navigate(-1)}
+                className="group flex items-center gap-2 px-6 py-2 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg"
+              >
+             
+                <ArrowLeft
+                  className="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1"
+                />
+
+               
+                <span className="font-medium">Back</span>
+              </button>
+            )}
           </div>
 
-          <p className="text-slate-600 mt-2 text-center">
-            We offer competent and certified candidates for every healthcare department.
-          </p>
+        
         </div>
 
         {/* CARDS */}
@@ -250,7 +267,7 @@ const Medical: React.FC = () => {
       {fromOurExpertise && (
         <HowItWorks />
       )}
-       {/* <HowItWorks /> */}
+      {/* <HowItWorks /> */}
 
     </section>
   );

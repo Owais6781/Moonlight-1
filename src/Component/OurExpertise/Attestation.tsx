@@ -3,7 +3,7 @@
 
 import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-
+import { ArrowLeft } from "lucide-react";
 import image1 from "../../Media/Attestation/Dubai Embassy.png";
 import image2 from "../../Media/Attestation/Saudi embassy,.png";
 import image3 from "../../Media/Attestation/Qatar Embassy.png";
@@ -149,7 +149,10 @@ const Attestation: React.FC = () => {
                     <h2 className="text-4xl py-4 font-extrabold text-center bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 bg-clip-text text-transparent">
                         Document Legalisation/Attestation
                     </h2>
-                    <div className="w-full flex gap-2  justify-end">
+                     <p className="text-slate-600 mt-2 text-center">
+                        Fast, secure and reliable document attestation services.
+                    </p>
+                    {/* <div className="w-full flex gap-2  justify-end">
                         {fromOurExpertise && (
                             <button
                                 onClick={() => navigate(-1)}
@@ -158,11 +161,25 @@ const Attestation: React.FC = () => {
                                 Back
                             </button>
                         )}
-                    </div>
+                    </div> */}
+                        <div className="w-full flex justify-start">
+            {fromOurExpertise && (
+              <button
+                onClick={() => navigate(-1)}
+                className="group flex items-center gap-2 px-6 py-2 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg"
+              >
+             
+                <ArrowLeft
+                  className="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1"
+                />
 
-                    <p className="text-slate-600 mt-2 text-center">
-                        Fast, secure and reliable document attestation services.
-                    </p>
+               
+                <span className="font-medium">Back</span>
+              </button>
+            )}
+          </div>
+
+                   
                 </div>
 
                 {/* CARDS */}
