@@ -192,18 +192,18 @@
 //                 onClick={() => navigate(-1)}
 //                 className="group flex items-center gap-2 px-6 py-2 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg"
 //               >
-             
+
 //                 <ArrowLeft
 //                   className="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1"
 //                 />
 
-               
+
 //                 <span className="font-medium">Back</span>
 //               </button>
 //             )}
 //           </div>
 
-        
+
 //         </div>
 
 //         {/* CARDS */}
@@ -451,10 +451,15 @@ const Medical: React.FC = () => {
             {fromOurExpertise && (
               <button
                 onClick={() => navigate(-1)}
-                className="group flex items-center gap-2 px-4 md:px-6 py-2 md:py-3 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg bg-white"
+                className="group flex items-center gap-2 px-6 py-2 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg"
               >
-                <ArrowLeft className="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1" />
-                <span className="font-medium text-sm md:text-base">Back</span>
+
+                <ArrowLeft
+                  className="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1"
+                />
+
+
+                <span className="font-medium">Back</span>
               </button>
             )}
           </div>

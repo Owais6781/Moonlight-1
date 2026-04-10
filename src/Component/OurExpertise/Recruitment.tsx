@@ -84,7 +84,7 @@
 //   const navigate = useNavigate();
 //   const location = useLocation();
 //   const fromOurExpertise = location.state?.fromOurExpertise || false;
-  
+
 
 //   const [selectedDept, setSelectedDept] = useState<any>(null);
 
@@ -132,10 +132,10 @@
 //       tagColor: "text-orange-500",
 //     },
 //   ];
-  
+
 
 //   return (
-   
+
 //     <div >
 //       <section className="bg-gradient-to-br from-slate-50 to-slate-100 pt-4 py-6  " >
 //         <div className="max-w-7xl mx-auto px-6">
@@ -160,19 +160,19 @@
 //               )}
 //             </div> */}
 
-            
+
 //               <div className="w-full  justify-start hidden md:block">
 //             {fromOurExpertise && (
 //               <button
 //                 onClick={() => navigate(-1)}
 //                 className="group flex items-center gap-2 px-6 py-2 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg"
 //               >
-             
+
 //                 <ArrowLeft
 //                   className="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1"
 //                 />
 
-               
+
 //                 <span className="font-medium">Back</span>
 //               </button>
 //             )}
@@ -397,30 +397,23 @@ const Recruitment: React.FC = () => {
             </p>
 
             {/* Desktop / Tablet Back Button */}
-            <div className="hidden md:block w-full justify-start mt-5">
+            <div className="w-full justify-start hidden md:block mt-6">
               {fromOurExpertise && (
                 <button
                   onClick={() => navigate(-1)}
-                  className="group flex items-center gap-2 px-4 md:px-6 py-2 md:py-3 rounded-xl bg-white transition-all duration-300 shadow-md hover:shadow-lg"
+                  className="group flex items-center gap-2 px-6 py-2 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg"
                 >
-                  <ArrowLeft className="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1" />
-                  <span className="font-medium text-sm md:text-base">Back</span>
+
+                  <ArrowLeft
+                    className="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1"
+                  />
+
+
+                  <span className="font-medium">Back</span>
                 </button>
               )}
             </div>
 
-            {/* Mobile Back Button */}
-            <div className="flex md:hidden w-full justify-center mt-4">
-              {fromOurExpertise && (
-                <button
-                  onClick={() => navigate(-1)}
-                  className="group flex items-center gap-2 px-4 py-2 rounded-xl bg-white transition-all duration-300 shadow-md hover:shadow-lg"
-                >
-                  <ArrowLeft className="w-4 h-4 transition-transform duration-300 group-hover:-translate-x-1" />
-                  <span className="font-medium text-sm">Back</span>
-                </button>
-              )}
-            </div>
           </div>
 
           {/* CARDS */}

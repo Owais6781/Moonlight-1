@@ -311,7 +311,7 @@ const Ticket: React.FC = () => {
             families and corporate clients.
           </p>
 
-          <div className="w-full  justify-start hidden md:block">
+          <div className="w-full justify-start hidden md:block mt-6">
             {fromOurExpertise && (
               <button
                 onClick={() => navigate(-1)}
