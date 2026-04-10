@@ -413,7 +413,7 @@ const Services: React.FC = () => {
           </div>
 
           {/* Mobile back button */}
-          <div className="flex md:hidden w-full justify-center mt-4">
+          <div className=" hidden md:block w-full justify-center mt-4">
             {fromOurExpertise && (
               <button
                 onClick={() => navigate(-1)}

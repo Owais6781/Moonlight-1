@@ -397,7 +397,7 @@ const Recruitment: React.FC = () => {
             </p>
 
             {/* Desktop / Tablet Back Button */}
-            <div className="hidden md:flex w-full justify-start mt-5">
+            <div className="hidden md:block w-full justify-start mt-5">
               {fromOurExpertise && (
                 <button
                   onClick={() => navigate(-1)}

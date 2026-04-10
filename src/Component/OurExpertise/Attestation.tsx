@@ -407,7 +407,7 @@ const Attestation: React.FC = () => {
           </div>
 
           {/* Mobile back button */}
-          <div className="flex md:hidden w-full justify-center mt-4">
+          <div className="  w-full justify-center   hidden md:block mt-4">
             {fromOurExpertise && (
               <button
                 onClick={() => navigate(-1)}
@@ -445,7 +445,7 @@ const Attestation: React.FC = () => {
             {/* Close */}
             <button
               onClick={() => setSelectedDept(null)}
-              className="absolute top-3 right-3 sm:top-4 sm:right-4 cursor-pointer text-red-400 hover:text-red-700 text-lg sm:text-xl"
+              className="absolute top-3 right- sm:top-4 sm:right-4 cursor-pointer text-red-400 hover:text-red-700 text-lg sm:text-xl"
             >
               ✕
             </button>
