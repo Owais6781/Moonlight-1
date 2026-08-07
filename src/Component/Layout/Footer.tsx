@@ -2,11 +2,13 @@
 
 import React from "react";
 import {
-  FaMapMarkerAlt,
+  FaBuilding,
+  // FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope,
   FaArrowRight,
 } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
@@ -48,7 +50,7 @@ const Footer: React.FC = () => {
                 <li key={item.path}>
                   <Link
                     to={item.path}
-                      onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}
+                    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                     className="  gap-0.5  text-slate-200 hover:text-blue-400 transition-colors group"
                   >
                     <FaArrowRight
@@ -108,22 +110,44 @@ const Footer: React.FC = () => {
                   <div>
                     <p className="text-white font-medium">Email</p>
                     <p className="text-slate-200 text-xs break-all">
-                    info@moonlightoverseas.in
+                      info@moonlightoverseas.in
                     </p>
                   </div>
                 </li>
 
               </div>
 
+
+
+
               <li className="flex items-start gap-4 group">
-                <div className="w-10 h-10 rounded-lg bg-slate-900 flex items-center justify-center text-blue-500
-                  group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                  <FaMapMarkerAlt />
+                <div
+                  className="w-10 h-10 rounded-lg bg-slate-900 flex items-center justify-center text-blue-500
+    group-hover:bg-blue-600 group-hover:text-white transition-colors"
+                >
+                  <FaBuilding />
                 </div>
+
                 <div>
                   <p className="text-white font-medium">Registered Office</p>
                   <p className="text-slate-200 text-xs leading-relaxed">
-                    H-45/B, Abul Fazal Enclave-1 , Jamia Nagar, New Delhi 110025
+                    H-45/B, Abul Fazal Enclave-1, Jamia Nagar, New Delhi - 110025
+                  </p>
+                </div>
+              </li>
+
+              <li className="flex items-start gap-4 group">
+                <div
+                  className="w-10 h-10 rounded-lg bg-slate-900 flex items-center justify-center text-blue-500
+    group-hover:bg-blue-600 group-hover:text-white transition-colors"
+                >
+                  <FaLocationDot />
+                </div>
+
+                <div>
+                  <p className="text-white font-medium">Branch Office </p>
+                  <p className="text-slate-200 text-xs leading-relaxed">
+                    57, First Floor, Bharat Nagar, New Friends Colony, New Delhi - 110025
                   </p>
                 </div>
               </li>

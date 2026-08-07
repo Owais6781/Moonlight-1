@@ -20,6 +20,7 @@ const Layout = () => {
     "/ticket",
      "/about",
     "/contact",
+    "/privacy",
   ];
   const shouldShowSlider = !hideSliderRoutes.includes(location.pathname);
 
