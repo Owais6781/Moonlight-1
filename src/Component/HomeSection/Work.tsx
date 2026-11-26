@@ -1,6 +1,5 @@
 
 
-
 import {
   UserSearch,
   ClipboardCheck,
@@ -8,7 +7,16 @@ import {
   BadgeCheck,
   Settings,
 } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
+
+/*
+ * Palette taken from the Moonlight Overseas logo:
+ *   Brand blue  #015399   (the "M", "N" and the compass lines)
+ *   Logo grey   #6A6868   (the infinity "OO", "LIGHT", "OVERSEAS")
+ *   Deep navy   #06294D   (darker shade of the brand blue)
+ *   Page bg     #F5F7FA
+ * Headings use `font-heading` — define it in tailwind.config.ts fontFamily.
+ */
 
 const steps = [
   {
@@ -16,129 +24,125 @@ const steps = [
     title: "Recruitment",
     desc: "We conduct initial screening, resume review and phone interviews to identify the best candidates",
     icon: UserSearch,
-    color: "text-blue-600",
-    bg: "bg-blue-100",
-    border: "border-blue-200",
-    shadow: "shadow-blue-200",
   },
   {
     id: "02",
     title: "Interviews",
     desc: "We conduct first-round and behavioral interviews to assess candidate suitability",
     icon: ClipboardCheck,
-    color: "text-indigo-600",
-    bg: "bg-indigo-100",
-    border: "border-indigo-200",
-    shadow: "shadow-indigo-200",
   },
   {
     id: "03",
     title: "Assessment",
     desc: "We perform skill-based and personality assessments to evaluate candidate capabilities and Skill Evaluation",
     icon: Users,
-    color: "text-violet-600",
-    bg: "bg-violet-100",
-    border: "border-violet-200",
-    shadow: "shadow-violet-200",
   },
   {
     id: "04",
     title: "Verification",
     desc: "We conduct reference and background checks to ensure candidate reliability",
     icon: BadgeCheck,
-    color: "text-fuchsia-600",
-    bg: "bg-fuchsia-100",
-    border: "border-fuchsia-200",
-    shadow: "shadow-fuchsia-200",
   },
   {
     id: "05",
     title: "Onboarding",
     desc: "We will have the emigration process, ticketing and will provide orientation to candidate for a smooth onboarding process.",
     icon: Settings,
-    color: "text-rose-600",
-    bg: "bg-rose-100",
-    border: "border-rose-200",
-    shadow: "shadow-rose-200",
   },
 ];
 
 const HowItWorks = () => {
+  const reduceMotion = useReducedMotion();
+
   return (
-    
-    <section className="relative   mt-4 py-8  bg-gradient-to-br from-slate-50 to-slate-100 overflow-hidden">
-
-      <div className="max-w-7xl mx-auto px-4 ">
-        
+    // `isolate` makes this section its own stacking context so the connector
+    // line (z-index -1) stays visible above the section background.
+    <section className="relative isolate mt-4 overflow-hidden bg-[#F5F7FA] py-12 sm:py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center mb-20">
-
-          <h2 className="text-4xl font-extrabold text-center bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 bg-clip-text text-transparent">
+        <div className="mb-16 text-center sm:mb-20">
+          <h2 className="font-heading text-4xl font-semibold tracking-tight text-[#06294D] sm:text-5xl">
             Recruitment Process
           </h2>
-          <p className="mt-4 text-slate-500 text-lg">
+          <div
+            className="mx-auto mt-5 h-[3px] w-16 rounded-full bg-[#015399]"
+            aria-hidden="true"
+          />
+          <p className="mt-5 text-lg text-[#6A6868]">
             Our proven 5-step journey to finding your perfect match.
           </p>
         </div>
 
         <div className="relative">
-          {/* Connector Line (Desktop Only) */}
-          <div className="hidden lg:block absolute top-16 left-0 w-full h-0.5 bg-slate-200 -z-10" />
+          {/* Connector line (desktop only), from the first circle's centre to the last */}
+          <div
+            aria-hidden="true"
+            className="absolute left-[10%] right-[10%] top-16 -z-10 hidden h-0.5 bg-[#015399]/25 lg:block"
+          />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-4">
+          <ol className="grid grid-cols-1 gap-14 md:grid-cols-2 lg:grid-cols-5 lg:gap-4">
             {steps.map((step, index) => {
               const Icon = step.icon;
               return (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 30 }}
+                <motion.li
+                  key={step.id}
+                  initial={reduceMotion ? false : { opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.15, duration: 0.5 }}
-                  className="relative flex flex-col items-center text-center group"
+                  viewport={{ once: true, margin: "-40px" }}
+                  transition={{ delay: index * 0.12, duration: 0.5 }}
+                  className="group relative flex flex-col items-center text-center"
                 >
-                  {/* Circular Container */}
+                  {/* Circular container */}
                   <div className="relative mb-8">
-                    
-                    {/* Pulsing Outer Ring (Hover Effect) */}
-                    <div className={`absolute inset-0 rounded-full border-2 border-dashed ${step.border} opacity-0 group-hover:opacity-100 group-hover:animate-spin-slow transition-opacity duration-500 scale-125`} />
-                    
-                    {/* Main Circle */}
-                    <div className={`w-32 h-32 rounded-full bg-white border-4 ${step.border} flex items-center justify-center shadow-xl ${step.shadow} z-10 transition-transform duration-300 group-hover:-translate-y-2`}>
-                      
-                      {/* Inner Pastel Circle */}
-                      <div className={`w-24 h-24 rounded-full ${step.bg} flex items-center justify-center`}>
-                        <Icon className={`w-10 h-10 ${step.color} transition-transform duration-300 group-hover:scale-110`} />
-                      </div>
+                    {/* Dashed outer ring (hover effect) */}
+                    <div
+                      aria-hidden="true"
+                      className="absolute inset-0 scale-125 rounded-full border-2 border-dashed border-[#015399]/40 opacity-0
+                      transition-opacity duration-500 group-hover:opacity-100 group-hover:animate-[spin_14s_linear_infinite]
+                      motion-reduce:animate-none"
+                    />
 
+                    {/* Main circle */}
+                    <div
+                      className="relative z-10 flex h-32 w-32 items-center justify-center rounded-full border-4 border-[#015399] bg-white
+                      shadow-[0_14px_30px_-14px_rgba(6,41,77,0.45)] transition-transform duration-300 group-hover:-translate-y-2"
+                    >
+                      {/* Inner tint circle */}
+                      <div className="flex h-24 w-24 items-center justify-center rounded-full bg-[#015399]/10 transition-colors duration-300 group-hover:bg-[#015399]">
+                        <Icon
+                          className="h-10 w-10 text-[#015399] transition-colors duration-300 group-hover:text-white"
+                          aria-hidden="true"
+                        />
+                      </div>
                     </div>
 
-                    {/* Step Number Badge */}
-                    <div className="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center font-bold text-sm border-4 border-white shadow-lg z-20">
+                    {/* Step number badge */}
+                    <div className="absolute -right-2 -top-2 z-20 flex h-10 w-10 items-center justify-center rounded-full border-4 border-[#F5F7FA] bg-[#06294D] text-sm font-bold text-white shadow-lg">
                       {step.id}
                     </div>
                   </div>
 
-                  {/* Text Content */}
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">
+                  {/* Text */}
+                  <h3 className="mb-2 font-heading text-2xl font-semibold text-[#06294D]">
                     {step.title}
                   </h3>
-                  <p className="text-slate-500 text-sm max-w-[180px] leading-relaxed">
+                  <p className="max-w-[200px] text-sm leading-relaxed text-[#6A6868]">
                     {step.desc}
                   </p>
-                  
-                  {/* Mobile Connecting Line (Vertical) */}
-                  {index !== steps.length - 1 && (
-                     <div className="lg:hidden absolute -bottom-12 left-1/2 w-0.5 h-8 bg-slate-200 -translate-x-1/2" />
-                  )}
 
-                </motion.div>
+                  {/* Mobile connecting line (vertical) */}
+                  {index !== steps.length - 1 && (
+                    <div
+                      aria-hidden="true"
+                      className="absolute -bottom-12 left-1/2 h-8 w-0.5 -translate-x-1/2 bg-[#015399]/25 md:hidden"
+                    />
+                  )}
+                </motion.li>
               );
             })}
-          </div>
+          </ol>
         </div>
       </div>
-    
     </section>
   );
 };

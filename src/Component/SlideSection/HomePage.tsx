@@ -6,7 +6,7 @@ import RightOffersPanel from "./RightOffersPanel"
 
 const HomePage: React.FC = () => {
   return (
-    <div className="min-h-screen  w-full grid grid-cols-1 lg:grid-cols-[65%_35%]">
+    <div className="min-h-screen  w-full grid grid-cols-1 lg:grid-cols-[70%_30%]">
       {/* LEFT SLIDER */}
       <LeftImageSlider />
 

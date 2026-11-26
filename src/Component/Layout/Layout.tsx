@@ -30,7 +30,7 @@ const Layout = () => {
       <Header />
 
       {/* Add padding-top to offset fixed headers */}
-      <main className="flex-1 w-full pt-28">
+      <main className="flex-1 w-full pt-24">
         {shouldShowSlider && <HomePage />}
         <Outlet />
       </main>
